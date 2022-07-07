@@ -7,6 +7,16 @@ function App() {
   return (
     <div className="App">
       <Nav />
+
+      <main>
+
+        <div className='movie-card-wrapper'>
+
+          
+        </div>
+
+      </main>
+
     </div>
   );
 }
