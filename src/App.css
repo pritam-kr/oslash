@@ -30,3 +30,8 @@ backdrop-filter: blur(4.2px);
 font-size: 1.2rem;
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.wrapper{
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+}
