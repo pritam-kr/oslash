@@ -75,7 +75,11 @@ const Booking = () => {
               </div>
             </header>
 
-            <div className="payment-details"></div>
+            <div className="btn-container text-center mt-8 mb-4">
+              <button className="btn-booking bg-[#0662b3] px-6 py-2 rounded-sm text-[#fff] hover:bg-[#0662b6]">
+                Back
+              </button>
+            </div>
           </div>
         </main>
       )}
