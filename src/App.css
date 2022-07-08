@@ -21,17 +21,16 @@ span {
   color: var(--paragraph-color);
 }
 
-
-.movie-title{
-   background: rgba(255, 255, 255, 0.54);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.066);
-backdrop-filter: blur(4.2px);
--webkit-backdrop-filter: blur(4.2px);
-font-size: 1.2rem;
-border: 1px solid rgba(255, 255, 255, 0.3);
+.movie-title {
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.066);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.wrapper{
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
