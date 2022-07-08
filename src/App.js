@@ -1,20 +1,19 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Card from './components/movieCard/Card';
-import Nav from './components/nav/Nav';
-import { movies } from './data/movies';
+import Booking from './pages/booking/Booking';
+import Home from './pages/home/Home';
+import Ticket from './pages/ticket/Ticket';
+ 
 
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <main className='p-6'>
-        <div className='movie-card-wrapper flex flex-wrap gap-2 justify-center'>
-          {
-            movies.allMovies.map((eachMovies) => <Card eachMovies={eachMovies}/>)
-          }
-        </div>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:movieId" element={<Ticket />} />
+        <Route path="/booking" element={<Booking />} />
+      </Routes>
     </div>
   );
 }
