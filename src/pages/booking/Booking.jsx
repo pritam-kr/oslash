@@ -23,7 +23,7 @@ const Booking = () => {
     .map((each) => (each.shitSide === "X" ? 100 : 80))
     .reduce((sum, price) => sum + price, 0);
 
-  // Add GST to total Price
+  // Add GST to total Prices
   const gst = (ticketPrice * 30) / 100;
 
   //  Total Price
