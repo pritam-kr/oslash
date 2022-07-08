@@ -4,9 +4,10 @@ import { movies } from "../../data/movies";
 import { useParams, useNavigate } from "react-router-dom";
 import Poster from "../../components/moviePoster/Poster";
 import { allShits } from "../../data/allShits";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { selectShit } from "../../redux/actions/selectShit";
 import Shit from "../../components/shit/Shit";
+import Loading from "../../components/loading/Loading";
 
 const Ticket = () => {
   const [userName, setUserName] = useState("");
@@ -40,12 +41,13 @@ const Ticket = () => {
       navigate("/booking");
     }
   };
+  
 
   return (
     <>
       <Nav />
 
-      {selectedMovie && (
+      {!selectedMovie ? <Loading /> :  (
         <main className="p-6">
           <Poster selectedMovie={selectedMovie} />
 

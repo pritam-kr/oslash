@@ -2,8 +2,9 @@ import React from "react";
 import Nav from "../../components/nav/Nav";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Loading from "../../components/loading/Loading";
 
-
+ 
 const Booking = () => {
   const {
     shitReducer: { selectedShits },
@@ -11,7 +12,7 @@ const Booking = () => {
 
   // current Movie
   const currentMovie = selectedShits[0]?.selectedMovie;
-
+ 
   // Shit number
   const shitNumber = selectedShits?.map((each) => each.selectedShit.shitNumber);
 
@@ -35,7 +36,7 @@ const Booking = () => {
     <>
       <Nav />
 
-      {currentMovie && (
+      {!currentMovie ? <Loading /> :  (
         <main className="p-6 flex justify-center">
           <div className="billing-card w-billing-card border-2 ">
             <header className="movies-details flex">
