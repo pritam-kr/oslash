@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "../../components/nav/Nav";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+
 
 const Booking = () => {
   const {
@@ -76,9 +78,9 @@ const Booking = () => {
             </header>
 
             <div className="btn-container text-center mt-8 mb-4">
-              <button className="btn-booking bg-[#0662b3] px-6 py-2 rounded-sm text-[#fff] hover:bg-[#0662b6]">
-                Back
-              </button>
+              <Link to="/" className="btn-booking bg-[#0662b3] px-6 py-2 rounded-sm text-[#fff] hover:bg-[#0662b6]">
+                Home
+              </Link>
             </div>
           </div>
         </main>
